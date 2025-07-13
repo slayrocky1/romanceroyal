@@ -132,30 +132,91 @@
   </header>
 
   <nav>
-    <a href="#home">خانه</a>
+    <a href="#home">مشاوره</a>
     <a href="#products">محصولات</a>
     <a href="#contact">تماس با ما</a>
   </nav>
 
-  <section class="hero" id="home">
-    <h1>زیبایی سلطنتی، انتخاب شماست</h1>
-    <p>محصولات بهداشتی زنانه با کیفیت لوکس و طراحی ویژه</p>
-  </section>
+  <!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>محصولات - Romance Royal</title>
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #fff;
+      color: #333;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #d4af37;
+      margin: 40px 0 20px;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .product {
+      border: 2px solid #d4af37;
+      border-radius: 12px;
+      padding: 15px;
+      max-width: 300px;
+      text-align: center;
+      background-color: #fff;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product h3 {
+      margin-top: 10px;
+      color: #d4af37;
+      font-size: 1.2rem;
+    }
+    .product p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    @media (max-width: 768px) {
+      .product-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
 
-  <section class="products" id="products">
+  <h1>محصولات ما</h1>
+
+  <div class="product-grid">
     <div class="product">
-      <img src="https://via.placeholder.com/300x200" alt="ژل بهداشتی زنانه">
-      <h3>ژل بهداشتی زنانه</h3>
-      <p>فرمولاسیون ملایم برای حفظ PH طبیعی</p>
-      <button>افزودن به سبد خرید</button>
+      <img src="product1.jpg" alt="محصول 1">
+      <h3>ژل بهداشتی بانوان</h3>
+      <p>پاک‌کنندگی ملایم و رایحه خوشبو</p>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/300x200" alt="دستمال مرطوب">
-      <h3>دستمال مرطوب مخصوص بانوان</h3>
-      <p>بسته‌بندی کوچک، مناسب برای استفاده روزمره</p>
-      <button>افزودن به سبد خرید</button>
+      <img src="product2.jpg" alt="محصول 2">
+      <h3>دستمال مرطوب</h3>
+      <p>مناسب پوست حساس با عصاره گل</p>
     </div>
-  </section>
+    <div class="product">
+      <img src="product3.jpg" alt="محصول 3">
+      <h3>کرم روشن‌کننده</h3>
+      <p>برای نواحی تیره با فرمول ضد لک</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
 
   <footer id="contact">
     <div class="footer-box">
