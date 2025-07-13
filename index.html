@@ -167,3 +167,118 @@
   </footer>
 </body>
 </html>
+
+
+}
+    #order a {
+      display: inline-block;
+      background-color: white;
+      color: #d4af37;
+      border: 2px solid #d4af37;
+      padding: 12px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #order a:hover {
+      background-color: #d4af37;
+      color: white;
+    }
+    footer {
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 1rem;
+      color: #555;
+      border-top: 2px solid #d4af37;
+    }
+    footer .footer-box {
+      border: 2px solid #d4af37;
+      border-radius: 12px;
+      background-color: white;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    footer a {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    Romance Royal
+  </header>
+
+  <div class="side-menu" id="sideMenu">
+    <h3>منو</h3>
+    <a href="#products">محصولات</a>
+    <a href="#consult">مشاوره</a>
+    <a href="#order">ثبت سفارش</a>
+  </div>
+
+  <nav>
+    <a href="#home">خانه</a>
+    <a href="#products">محصولات</a>
+    <a href="#contact">تماس با ما</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>زیبایی سلطنتی، انتخاب شماست</h1>
+    <p>محصولات بهداشتی زنانه با کیفیت لوکس و طراحی ویژه</p>
+  </section>
+
+  <section class="products" id="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200" alt="ژل بهداشتی زنانه">
+      <h3>ژل بهداشتی زنانه</h3>
+      <p>فرمولاسیون ملایم برای حفظ PH طبیعی</p>
+      <button>افزودن به سبد خرید</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200" alt="دستمال مرطوب">
+      <h3>دستمال مرطوب مخصوص بانوان</h3>
+      <p>بسته‌بندی کوچک، مناسب برای استفاده روزمره</p>
+      <button>افزودن به سبد خرید</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200" alt="کرم روشن کننده">
+      <h3>کرم روشن‌کننده پوست</h3>
+      <p>پوستی شفاف، درخشان و یکدست با ترکیبات طبیعی</p>
+      <button>افزودن به سبد خرید</button>
+    </div>
+  </section>
+
+  <section id="consult">
+    <h2 style="color:#d4af37; margin-bottom:20px;">مشاوره آنلاین</h2>
+    <textarea placeholder="سوال یا درخواست خود را وارد کنید..."></textarea><br>
+    <button onclick="alert('پیام شما ارسال شد، منتظر پاسخ مشاور باشید.')">ارسال</button>
+  </section>
+
+  <section id="order">
+    <h2 style="color:#d4af37; margin-bottom:20px;">ثبت سفارش سریع</h2>
+    <a href="https://t.me/+989915580973" target="_blank">ارسال پیام تلگرام</a>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-box">
+      <p>برای دریافت مشاوره و ثبت سفارش:</p>
+      <p>ایمیل: <a href="mailto:info@romanceroyal.ir">info@romanceroyal.ir</a></p>
+      <p>شماره تماس: ۰۹۱۲۳۴۵۶۷۸۹</p>
+      <p>تمامی حقوق محفوظ است © Romance Royal</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('sideMenu').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
