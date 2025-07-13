@@ -52,7 +52,89 @@
     }
     .hero p {
       font-size: 1.2rem;
-      color: #
+      color: #555;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 60px 30px;
+    }
+    .product {
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product h3 {
+      color: #d4af37;
+      margin-top: 15px;
+      font-size: 1.2rem;
+    }
+    .product p {
+      font-size: 0.95rem;
+      color: #777;
+      margin: 10px 0;
+    }
+    .product button {
+      background-color: #d4af37;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #f8f8f8;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Romance Royal
+  </header>
+
+  <nav>
+    <a href="#home">خانه</a>
+    <a href="#products">محصولات</a>
+    <a href="#contact">تماس با ما</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>زیبایی سلطنتی، انتخاب شماست</h1>
+    <p>محصولات بهداشتی زنانه با کیفیت لوکس و طراحی ویژه</p>
+  </section>
+
+  <section class="products" id="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200" alt="ژل بهداشتی زنانه">
+      <h3>ژل بهداشتی زنانه</h3>
+      <p>فرمولاسیون ملایم برای حفظ PH طبیعی</p>
+      <button>افزودن به سبد خرید</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200" alt="دستمال مرطوب">
+      <h3>دستمال مرطوب مخصوص بانوان</h3>
+      <p>بسته‌بندی کوچک، مناسب برای استفاده روزمره</p>
+      <button>افزودن به سبد خرید</button>
+    </div>
+  </section>
+
+  <footer id="contact">
+    تماس با ما: info@romanceroyal.ir
+  </footer>
+</body>
+</html>
 
 import React from "react";
 import { Button } from "@/components/ui/button";
