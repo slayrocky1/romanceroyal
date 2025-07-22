@@ -124,18 +124,26 @@
     footer a:hover {
       text-decoration: underline;
     }
-
-    <!-- هدر طلایی با لوگو -->
-<div class="golden-header">
-  <img src="images/photo_2025-07-22_20-24-13.jpg" alt="لوگو سایت" class="site-logo">
-</div>
+<header class="site-header">
+  <div class="logo-container">
+    <img src="photo_2025-07-22_20-24-13.jpg" alt="لوگوی سایت" class="site-logo">
+  </div>
+</header>
 
 <style>
-  .golden-header {
-    background: linear-gradient(90deg, #FFD700, #FFC107);
-    padding: 16px 0;
+  .site-header {
+    width: 100%;
+    background-color: #fff8e1; /* طلایی کم‌رنگ */
+    border-bottom: 2px solid #ffd700;
+    padding: 12px 0;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 1000;
+  }
+
+  .logo-container {
+    display: inline-block;
   }
 
   .site-logo {
@@ -149,6 +157,8 @@
     }
   }
 </style>
+
+    
   <div class="side-menu" id="sideMenu">
     <h3>منو</h3>
     <a href="products.html">محصولات</a>
