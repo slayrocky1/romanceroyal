@@ -251,14 +251,15 @@
   </style>
 </head>
 <body>
-  <!DOCTYPE html>
+  
+ <!DOCTYPE html>
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <title>لوگو در مرکز صفحه</title>
+  <title>لوگو در مرکز</title>
   <style>
     body, html {
-      height: 30%;
+      height: 100%;
       margin: 0;
     }
 
@@ -267,19 +268,20 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
-      background-color: #fffdf5; /* زمینه روشن و تمیز */
+      background-color: #fffdf5;
     }
 
     .center-logo-container img {
-      max-width: 50px;
-      width: 50%;
+      width: auto;
+      max-width: 300px;     /* عرض حداکثر */
+      max-height: 200px;    /* ارتفاع حداکثر */
       height: auto;
     }
 
     @media (max-width: 600px) {
       .center-logo-container img {
-        max-width: 100px;
-        width: 70%;
+        max-width: 150px;
+        max-height: 120px;
       }
     }
   </style>
@@ -290,6 +292,9 @@
   <div class="center-logo-container">
     <img src="photo_2025-07-22_20-24-13.jpg" alt="لوگو سایت">
   </div>
+
+</body>
+</html>
 
 </body>
 </html>
