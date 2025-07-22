@@ -124,14 +124,31 @@
     footer a:hover {
       text-decoration: underline;
     }
-  </nav>
-<body>
-  <header>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    Romance Royal
-  </header>
-    </nav>
 
+    <!-- هدر طلایی با لوگو -->
+<div class="golden-header">
+  <img src="images/logo.png" alt="لوگو سایت" class="site-logo">
+</div>
+
+<style>
+  .golden-header {
+    background: linear-gradient(90deg, #FFD700, #FFC107);
+    padding: 16px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .site-logo {
+    max-height: 80px;
+    height: auto;
+  }
+
+  @media (max-width: 600px) {
+    .site-logo {
+      max-height: 60px;
+    }
+  }
+</style>
   <div class="side-menu" id="sideMenu">
     <h3>منو</h3>
     <a href="products.html">محصولات</a>
