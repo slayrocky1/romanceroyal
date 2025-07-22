@@ -433,3 +433,40 @@
   </footer>
 </body>
 </html>
+ <!-- بخش نماد اعتماد -->
+<div class="trust-seals">
+  <a href="https://example.com/namad1-link" target="_blank" rel="noopener">
+    <img src="photo_2025-07-22_20-09-21.jpg" alt="نماد اعتماد 1">
+  </a>
+  <a href="https://example.com/namad2-link" target="_blank" rel="noopener">
+    <img src="photo_2025-07-22_20-09-40.jpg" alt="نماد اعتماد 2">
+  </a>
+</div>
+
+<style>
+  .trust-seals {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+  }
+
+  .trust-seals img {
+    max-height: 80px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .trust-seals img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 600px) {
+    .trust-seals {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+</style>
