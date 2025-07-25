@@ -275,14 +275,14 @@
     .center-logo-container img {
       width: auto;
       max-width: 100px;     /* عرض حداکثر */
-      max-height: 10px;    /* ارتفاع حداکثر */
+      max-height: 50px;    /* ارتفاع حداکثر */
       height: auto;
     }
 
     @media (max-width: 600px) {
       .center-logo-container img {
         max-width: 150px;
-        max-height: 100px;
+        max-height: 20px;
       }
     }
   </style>
@@ -556,3 +556,79 @@
     }
   }
 </style>
+
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>سبد خرید</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* نوار بالایی */
+    .top-bar {
+      background-color: #fff8e1;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .cart {
+      position: relative;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .cart::after {
+      content: '3'; /* تعداد کالاها */
+      position: absolute;
+      top: -8px;
+      right: -12px;
+      background-color: red;
+      color: white;
+      font-size: 12px;
+      width: 18px;
+      height: 18px;
+      text-align: center;
+      line-height: 18px;
+      border-radius: 50%;
+    }
+
+    .spacer {
+      height: 60px; /* برای فاصله از نوار بالایی */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- نوار بالای صفحه -->
+  <div class="top-bar">
+    <img src="logo.png" alt="لوگو" class="logo">
+    <div class="cart">🛒</div>
+  </div>
+
+  <!-- فاصله برای جلوگیری از پوشش محتوا -->
+  <div class="spacer"></div>
+
+  <!-- ادامه محتوای سایت -->
+  <main>
+    <h1>خوش آمدید</h1>
+    <p>اینجا محتوای سایت شما قرار می‌گیرد.</p>
+  </main>
+
+</body>
+</html>
